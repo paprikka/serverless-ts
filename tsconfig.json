@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "allowJs": true,
+        "paths": {
+            "*": [
+                "node_modules/@types/*",
+                "*"
+            ]
+        }
+    },
+    "exclude": [
+        "handlers/**/*.spec.*",
+        "handlers/**/__mocks__/*.*",
+        "node_modules/**/*"
+    ]
+}
