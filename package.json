@@ -4,7 +4,7 @@
     "test": "jest --forceExit --config=jest.config.unit.json",
     "serve-production": "NODE_ENV=production sls webpack serve",
     "serve": "sls webpack serve",
-    "deploy": "sls deploy -v"
+    "deploy": "yarn test && NODE_ENV=production sls deploy -v"
   },
   "dependencies": {
     "@types/aws-lambda": "^0.0.16",
